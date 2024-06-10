@@ -1,52 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div style="width: 1400px; height: 1000px; position:relative; margin-left: 50px; background: linear-gradient(90deg, rgba(199.11, 85.45, 85.45, 0.96) 0%, #E48686 49%, #FFDADA 99%); border-radius: 40px; overflow: hidden">
+<html>
+    <head>
+        <title>Sales Report System</title>
+        <style>
+            
+Copy code
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 430px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFDFD;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 26px;
+    color: #C75555;
+}
+h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.heading-container {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    height: 80%;
+}
+label {
+    display: block;
+    margin-top: 25px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #ffacac;
+    color: #060606;
+    border: none;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+.register_link {
+    margin-top: 14px;
+}
+input[type="submit"]:hover {
+    background-color: #dddddd;
+    color: #C75555;
+}
+.pass, .signup_link {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+.signup_link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.remember-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.remember-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+.remember-container p {
+    margin: 0 10px 0 0;
+}
+.remember-container a {
+    text-decoration: none;
+    color: rgb(75, 75, 250);
+    margin-left: 70px;
+    
+}
+            
+            
 
-        <div style="width: 1566px; height: 543px; left: -63px; top: 752px; position: absolute; background: rgba(255, 255, 255, 0.79); border-radius: 9999px"></div>
 
-        <img src="images/kbc_logo-removebg-preview.png" alt="" img style="left: 601px; top: 832px; position: absolute; mix-blend-mode: darken" src="https://via.placeholder.com/238x212"> <!-- <img style="width: 238px; height: 212px; left: 601px; top: 832px; position: absolute; mix-blend-mode: darken" src="https://via.placeholder.com/238x212" /> -->
-
-        <div style="width: 662px; height: 677px; left: 389px; top: 152px; position: absolute; background: rgba(255, 253.09, 253.09, 0.56); border-radius: 30px"></div>
-
-        <div style="width: 541px; height: 570px; left: 450px; top: 209px; position: absolute; background: white; border-radius: 30px"></div>
-
-        <div style="width: 428px; height: 49px; left: 506px; top: 450px; position: absolute; background: rgba(255, 254.79, 254.79, 0.03); border-radius: 10px; border: 1px #7E7E7E solid"></div>
-
-        <div style="left: 540px; top: 272px; position: absolute; color: black; font-size: 32px; font-family: Inter; font-weight: 700; word-wrap: break-word">Sales Reporting System</div>
-
-        <div style="left: 609px; top: 339px; position: absolute; color: black; font-size: 22px; font-family: Inter; font-weight: 400; word-wrap: break-word">Login to your account</div>
-
-        <div style="left: 506px; top: 415px; position: absolute; color: black; font-size: 17px; font-family: Inter; font-weight: 500; word-wrap: break-word">Name</div>
-
-        <div style="left: 519px; top: 464px; position: absolute; color: rgba(92, 90.47, 90.47, 0.36); font-size: 17px; font-family: Inter; font-weight: 500; word-wrap: break-word">Enter your name</div>
-
-        <div style="left: 525px; top: 648px; position: absolute; color: rgba(92, 90.47, 90.47, 0.61); font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word">Remember me</div>
-
-        <div style="left: 812px; top: 648px; position: absolute; color: #5E5AFF; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Forgot Password?</div>
-
-        <div style="left: 521px; top: 589px; position: absolute; color: rgba(92, 90.47, 90.47, 0.36); font-size: 17px; font-family: Inter; font-weight: 500; word-wrap: break-word">Enter your  password</div>
-
-        <div style="width: 428px; height: 49px; left: 506px; top: 575px; position: absolute; background: rgba(255, 254.79, 254.79, 0.03); border-radius: 10px; border: 1px #7E7E7E solid"></div>
-
-        <div style="width: 428px; height: 49px; left: 506px; top: 703px; position: absolute; background: linear-gradient(90deg, rgba(255, 173.40, 173.40, 0.96) 0%, rgba(199.11, 85.45, 85.45, 0.96) 84%); border-radius: 10px"></div>
-
-        <div style="left: 506px; top: 540px; position: absolute; color: #424141; font-size: 17px; font-family: Inter; font-weight: 500; word-wrap: break-word">Password</div>
-
-        <div style="width: 24px; height: 24px; padding-left: 1px; padding-right: 1px; padding-top: 4.50px; padding-bottom: 4.50px; left: 889px; top: 589px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-
-        <div style="width: 22px; height: 15px; background: rgba(0, 0, 0, 0.68)"></div>
+        </style> 
+        <link rel="stylesheet" href="login.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>SALES REPORT SYSTEM</h1>
+            <div class="heading-container">
+                <h2>Login to your account</h2>
+                <form action="/login" method="post" onsubmit="return validateForm()">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+    
+                    <div class="remember-container">
+                        <input type="checkbox" id="remember" name="remember">Remember Me
+                        <a href="#">Forgot password?</a>
+                    </div>
+    
+                    <input type="submit" value="Log in">
+                    <div class="register_link">
+                        Not a member? <a href="#" style="color: rgb(75, 75, 250);">Register</a>
+                    </div>
+                </form>
+            </div>
+            <img src="images/kbc_logo-removebg-preview.png" alt="" style="margin-top: 24px;">
         </div>
-
-        <div style="left: 690px; top: 714px; position: absolute; color: white; font-size: 22px; font-family: Inter; font-weight: 700; word-wrap: break-word">Log in</div>
-        <div style="width: 12px; height: 12px; left: 506px; top: 650px; position: absolute; background: white; border: 1px #7E7E7E solid">
-        
-        </div>
-      </div>
-</body>
+    </body>
 </html>
